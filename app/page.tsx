@@ -1,13 +1,18 @@
+import Image from "next/image";
+
 const projects = [
   {
     number: "01",
-    name: "Belspace",
+    name: "Be1Space",
     type: "Product · Frontend · Accessibility",
     description: "A web app helping NYU students discover affordable, accessible study spaces across New York City.",
     contribution: "Built discovery, favorites, authentication, profiles, and location-based browsing with an accessibility-first approach.",
     stack: ["React", "Next.js", "Tailwind", "Supabase"],
     theme: "belspace",
     status: "Student product",
+    href: "https://be1space.vercel.app/",
+    image: "/projects/be1space.png",
+    imageAlt: "Be1Space landing page with a starry navy background and Find Your Perfect Space headline",
   },
   {
     number: "02",
@@ -18,6 +23,9 @@ const projects = [
     stack: ["Python", "FastAPI", "Azure AI", "React"],
     theme: "hvac",
     status: "Datathon project",
+    href: "https://the-hvac-margin-rescue-challenge.vercel.app/",
+    image: "/projects/hvac-margin-rescue.png",
+    imageAlt: "MarginGuard dashboard showing HVAC project risk, critical projects, warnings, and average margin",
   },
   {
     number: "03",
@@ -28,6 +36,9 @@ const projects = [
     stack: ["Prompt design", "UI/UX", "Automation", "AI"],
     theme: "eclipse",
     status: "Internship experience",
+    href: null,
+    image: "/projects/eclipse.png",
+    imageAlt: "JGM Eclipse sign-in interface with a soft blue and pink gradient surrounding a glass-like login card",
   },
 ];
 
@@ -91,12 +102,24 @@ export default function Home() {
           <div className="project-list">
             {projects.map((project) => (
               <article className="project-card" key={project.name}>
-                <div className={`project-visual ${project.theme}`} aria-hidden="true">
+                <div className={`project-visual ${project.theme}`}>
                   <span className="project-number">{project.number}</span>
-                  <div className="visual-window">
-                    <div className="visual-top"><i /><i /><i /></div>
-                    <div className="visual-body"><div className="visual-line wide"/><div className="visual-line"/><div className="visual-panels"><i/><i/><i/></div></div>
-                  </div>
+                  {project.image ? (
+                    project.href ? (
+                      <a className="project-image-link" href={project.href} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} live project`}>
+                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) 100vw, 42vw" />
+                      </a>
+                    ) : (
+                      <div className="project-image-link project-image-static">
+                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) 100vw, 42vw" />
+                      </div>
+                    )
+                  ) : (
+                    <div className="visual-window" aria-hidden="true">
+                      <div className="visual-top"><i /><i /><i /></div>
+                      <div className="visual-body"><div className="visual-line wide"/><div className="visual-line"/><div className="visual-panels"><i/><i/><i/></div></div>
+                    </div>
+                  )}
                   <span className="visual-label">{project.status}</span>
                 </div>
                 <div className="project-content">
@@ -104,7 +127,37 @@ export default function Home() {
                   <p className="project-description">{project.description}</p>
                   <div className="contribution"><span>My contribution</span><p>{project.contribution}</p></div>
                   <ul className="tags" aria-label={`${project.name} technologies`}>{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
+                  {project.href && <a className="project-link" href={project.href} target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a>}
                 </div>
+                {project.theme === "eclipse" && (
+                  <details className="interface-gallery">
+                    <summary><span>Explore the interface</span><span aria-hidden="true">↓</span></summary>
+                    <div className="interface-gallery-intro">
+                      <p className="eyebrow">Selected interface moments</p>
+                      <p>A closer look at the visual system, workspace hierarchy, and responsive themes I helped shape.</p>
+                    </div>
+                    <div className="interface-gallery-grid">
+                      <figure>
+                        <a href="/projects/eclipse.png" target="_blank" aria-label="Enlarge Eclipse authentication interface">
+                          <Image src="/projects/eclipse.png" alt="JGM Eclipse authentication interface with a glass-like card on a soft blue and pink gradient" fill sizes="(max-width: 800px) 100vw, 33vw" />
+                        </a>
+                        <figcaption><span>01 — Authentication</span><p>A focused Microsoft sign-in flow that makes enterprise access feel calm and approachable.</p></figcaption>
+                      </figure>
+                      <figure>
+                        <a href="/projects/eclipse-chat-light.png" target="_blank" aria-label="Enlarge Eclipse light workspace interface">
+                          <Image src="/projects/eclipse-chat-light.png" alt="Eclipse chatbot workspace in light mode with conversation history, reusable commands, and messaging controls" fill sizes="(max-width: 800px) 100vw, 33vw" />
+                        </a>
+                        <figcaption><span>02 — Chat workspace</span><p>Conversation history, reusable commands, and core messaging controls organized into a clear workspace.</p></figcaption>
+                      </figure>
+                      <figure>
+                        <a href="/projects/eclipse-chat-dark.png" target="_blank" aria-label="Enlarge Eclipse dark mode interface">
+                          <Image src="/projects/eclipse-chat-dark.png" alt="Eclipse chatbot workspace in dark mode with restrained borders and clear visual hierarchy" fill sizes="(max-width: 800px) 100vw, 33vw" />
+                        </a>
+                        <figcaption><span>03 — Dark mode</span><p>A darker visual system with restrained borders, readable hierarchy, and consistent component states.</p></figcaption>
+                      </figure>
+                    </div>
+                  </details>
+                )}
               </article>
             ))}
             <article className="project-card coming-soon">
