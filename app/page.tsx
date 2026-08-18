@@ -17,10 +17,10 @@ const projects = [
   {
     number: "02",
     name: "HVAC Margin Rescue",
-    type: "Data · AI · Full stack",
-    description: "A full-stack decision-support product created for a datathon to help HVAC teams identify projects whose margins are at risk before losses grow. It transforms dense financial and operational project data into prioritized risk signals, root-cause explanations, and actionable recovery opportunities.",
-    contribution: "Connected the React dashboard to Python and FastAPI services that power the project-analysis workflow, then integrated Azure AI to support the interpretation of risk. Translated the resulting scores and recommendations into a clear interface that highlights critical projects, estimated recoverable value, margin performance, and the issues requiring immediate attention.",
-    stack: ["Python", "FastAPI", "Azure AI", "React", "REST APIs"],
+    type: "Data · Analytics · Full stack",
+    description: "A full-stack decision-support application built for a datathon that analyzes HVAC project data to identify financially at-risk projects. It surfaces margin, billing, and operational risk indicators so teams can recognize problems earlier and focus on the projects requiring attention.",
+    contribution: "Connected the web dashboard to Python and FastAPI services for risk scoring, root-cause analysis, and recommendations. Translated project data into prioritized insights and recovery opportunities, then presented critical projects, margin performance, estimated recoverable value, and recommended actions in a clear decision-making interface.",
+    stack: ["Python", "FastAPI", "React", "REST APIs"],
     theme: "hvac",
     status: "Datathon project",
     href: "https://the-hvac-margin-rescue-challenge.vercel.app/",
@@ -85,9 +85,9 @@ export default function Home() {
         <div className="section-inner"><SectionHeading eyebrow="Who I am">A little about me <span aria-hidden="true">✦</span></SectionHeading>
           <div className="about-grid">
             <div className="about-copy">
-              <p>I&apos;m <strong>Zahyra</strong>, a first-generation Latina and Data Science student at <strong>New York University</strong> exploring the intersection of data, software, AI, and product. I&apos;m drawn to spaces where people with backgrounds like mine are still underrepresented—not only because I want a seat at the table, but because I want others like me to see themselves there too.</p>
+              <p>I&apos;m <strong>Zahyra</strong>, a first-generation Latina and Data Science student at <strong>New York University</strong> exploring the intersection of data, software, AI, and product. I&apos;m drawn to spaces where people with backgrounds like mine are still underrepresented. I want a seat at the table, and I want others like me to see themselves there too.</p>
               <p>I like turning problems I notice in everyday life into technology that makes things simpler, clearer, and more useful. I care about understanding who a problem affects and creating products that feel <em>accessible, intentional, and genuinely enjoyable to use.</em></p>
-              <p>I&apos;m especially interested in consumer technology, beauty, entertainment, and fintech—industries that shape how people live, connect, and make decisions every day. I want to help build products and services that make those experiences more accessible, especially for people who have historically been overlooked.</p>
+              <p>I&apos;m especially interested in consumer technology, beauty, entertainment, and fintech. These industries shape how people live, connect, and make decisions every day. I want to help build products and services that make those experiences more accessible, especially for people who have historically been overlooked.</p>
             </div>
             <div className="about-aside">
               <blockquote><p>“notice a problem → understand who it affects → build something useful”</p><cite>My approach</cite></blockquote>
