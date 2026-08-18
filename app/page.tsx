@@ -85,13 +85,13 @@ export default function Home() {
         <div className="section-inner"><SectionHeading eyebrow="Who I am">A little about me <span aria-hidden="true">✦</span></SectionHeading>
           <div className="about-grid">
             <div className="about-copy">
-              <p>I&apos;m <strong>Zahyra</strong>, a Data Science student at <strong>New York University</strong> exploring the space between data, software, AI, and product.</p>
-              <p>I like working on ideas that come from problems I notice in everyday life—whether that means simplifying a complicated process, making information easier to understand, or helping people find a useful resource. I care about building things that feel <em>accessible, intentional, and genuinely enjoyable to use.</em></p>
-              <p>Right now, I&apos;m especially interested in consumer technology, beauty, entertainment, and other spaces where data and thoughtful design can shape a better experience.</p>
+              <p>I&apos;m <strong>Zahyra</strong>, a first-generation Latina and Data Science student at <strong>New York University</strong> exploring the intersection of data, software, AI, and product. I&apos;m drawn to spaces where people with backgrounds like mine are still underrepresented—not only because I want a seat at the table, but because I want others like me to see themselves there too.</p>
+              <p>I like turning problems I notice in everyday life into technology that makes things simpler, clearer, and more useful. I care about understanding who a problem affects and creating products that feel <em>accessible, intentional, and genuinely enjoyable to use.</em></p>
+              <p>I&apos;m especially interested in consumer technology, beauty, entertainment, and fintech—industries that shape how people live, connect, and make decisions every day. I want to help build products and services that make those experiences more accessible, especially for people who have historically been overlooked.</p>
             </div>
             <div className="about-aside">
               <blockquote><p>“notice a problem → understand who it affects → build something useful”</p><cite>My approach</cite></blockquote>
-              <div className="aside-note"><p className="eyebrow">Beyond the build ♡</p><p>Outside of coding, I love beauty and skincare, exploring NYC, and finding cute cafés and study spots. I&apos;m also always thinking about creative ideas and products I&apos;d want to build.</p></div>
+              <div className="aside-note"><p className="eyebrow">Beyond the build ♡</p><p>Outside of coding, I love all things beauty and skincare, exploring NYC, and adding way too many cafés and restaurants to my list of places to try. I&apos;m always down to try a new cuisine, find a cute café with good pastries, or test a makeup or skincare product I&apos;ve been eyeing. I also love anything creative and aesthetically pleasing, which definitely finds its way into pretty much everything I do.</p></div>
             </div>
           </div>
         </div>
