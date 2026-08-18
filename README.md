@@ -1,7 +1,5 @@
 <div align="center">
 
-![Zahyra Otero portfolio preview](./public/og.png)
-
 # Zahyra Otero · Portfolio ✦
 
 **Data · Product · Thoughtful Technology**
