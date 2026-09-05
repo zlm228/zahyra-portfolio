@@ -107,11 +107,11 @@ export default function Home() {
                   {project.image ? (
                     project.href ? (
                       <a className="project-image-link" href={project.href} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} live project`}>
-                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) 100vw, 42vw" />
+                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) calc(100vw - 5rem), 900px" />
                       </a>
                     ) : (
                       <div className="project-image-link project-image-static">
-                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) 100vw, 42vw" />
+                        <Image className="project-image" src={project.image} alt={project.imageAlt ?? ""} fill sizes="(max-width: 800px) calc(100vw - 5rem), 900px" />
                       </div>
                     )
                   ) : (
@@ -176,15 +176,15 @@ export default function Home() {
 
       <footer className="connect" id="connect">
         <div className="footer-glow" aria-hidden="true" />
-        <div className="connect-inner"><p className="eyebrow">Get in touch</p><h2>Let&apos;s make something<br/>useful and lovely.</h2>
+        <div className="connect-inner"><p className="eyebrow">Get in touch</p><h2>Let&apos;s make something<br/>useful.</h2>
           <p className="connect-copy">Open to learning, collaborating, internships, and building thoughtful things.</p>
           <div className="contact-links">
             <a href="https://www.linkedin.com/in/zahyra-otero/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="mailto:zlm228@nyu.edu">Email <span aria-hidden="true">→</span></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zlm228%40nyu.edu" target="_blank" rel="noreferrer">zlm228@nyu.edu <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/zlm228" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <a href="/zahyra-otero-resume.pdf" target="_blank">Résumé <span aria-hidden="true">↗</span></a>
           </div>
-          <p className="footer-note">Designed with intention, curiosity &amp; a little sparkle ✦ · © 2026 Zahyra Otero</p>
+          <p className="footer-note">© 2026 Zahyra Otero</p>
         </div>
       </footer>
     </main>
