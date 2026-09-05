@@ -161,7 +161,7 @@ export default function Home() {
               </article>
             ))}
             <article className="project-card coming-soon">
-              <div><p className="eyebrow">In progress</p><h3>Something new is blooming…</h3><p>A personal data and product project is currently taking shape.</p></div><span aria-hidden="true">✦</span>
+              <div><p className="eyebrow">In progress</p><h3>Something new is coming…</h3></div><span aria-hidden="true">✦</span>
             </article>
           </div>
         </div>
