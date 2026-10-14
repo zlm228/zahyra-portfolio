@@ -3,6 +3,8 @@ import { DM_Sans, Fraunces } from "next/font/google";
 import { headers } from "next/headers";
 import ExperienceEffects from "./components/ExperienceEffects";
 import ScrollProgress from "./components/ScrollProgress";
+import SmoothScroll from "./components/SmoothScroll";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -40,5 +42,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${dmSans.variable}`}><body><ScrollProgress /><ExperienceEffects />{children}</body></html>;
+  return <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${dmSans.variable}`}><body><SmoothScroll /><ScrollProgress /><ExperienceEffects />{children}</body></html>;
 }
