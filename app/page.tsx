@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollProgress from "./components/ScrollProgress";
+import ExperienceEffects from "./components/ExperienceEffects";
 import { capabilities, projects } from "./data/projects";
 
 function SectionHeading({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
@@ -10,6 +11,7 @@ function SectionHeading({ eyebrow, children }: { eyebrow: string; children: Reac
 export default function Home() {
   return <main>
     <ScrollProgress />
+    <ExperienceEffects />
     <header className="site-header">
       <a className="wordmark" href="#home" aria-label="Zahyra Otero, home">zo.</a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#connect">Connect</a></nav>
@@ -19,7 +21,7 @@ export default function Home() {
     <section className="hero" id="home">
       <div className="glow glow-one" aria-hidden="true" /><div className="glow glow-two" aria-hidden="true" />
       <span className="sparkle sparkle-one" aria-hidden="true">✦</span><span className="sparkle sparkle-two" aria-hidden="true">✦</span>
-      <div className="hero-content"><p className="eyebrow">Hello, I&apos;m</p><h1>Zahyra Otero</h1><p className="hero-kicker">Data · Product · Thoughtful Technology</p><div className="rule" /><p className="hero-meta">NYU · Data Science Major · Business Studies Minor · Class of 2028</p><p className="hero-intro">I turn everyday problems into useful technology that feels clear, accessible, and enjoyable to use.</p><a className="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a></div>
+      <div className="hero-content"><p className="eyebrow">Hello, I&apos;m</p><h1>Zahyra Otero</h1><p className="hero-kicker">Data · Product · Thoughtful Technology</p><div className="rule" /><p className="hero-meta">NYU · Data Science Major · Business Studies Minor · Class of 2028</p><p className="hero-intro">I notice the little things that make everyday life harder, then figure out how technology could make them better.</p><a className="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a></div>
       <p className="scroll-cue" aria-hidden="true">Scroll to discover <span>↓</span></p>
     </section>
 
@@ -33,7 +35,7 @@ export default function Home() {
       </div>
     </div></section>
 
-    <section className="currently" aria-label="What Zahyra is currently doing"><div className="currently-inner"><p className="eyebrow">Currently</p><p>Studying Data Science at NYU <span>·</span> Exploring consumer technology <span>·</span> Building my next data and product project</p></div></section>
+    <section className="currently" aria-label="What Zahyra is currently doing"><p className="currently-label eyebrow">Currently</p><div className="marquee"><div className="marquee-track"><p>Studying Data Science at NYU <span>✦</span> Exploring consumer technology <span>✦</span> Building my next data and product project <span>✦</span></p><p aria-hidden="true">Studying Data Science at NYU <span>✦</span> Exploring consumer technology <span>✦</span> Building my next data and product project <span>✦</span></p></div></div></section>
 
     <section className="section projects" id="projects"><div className="section-inner"><SectionHeading eyebrow="Selected work">Projects &amp; experience <span aria-hidden="true">✦</span></SectionHeading>
       <div className="project-list">{projects.map(project => <article className="project-card reveal" key={project.name}>
