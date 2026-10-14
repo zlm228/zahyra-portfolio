@@ -14,5 +14,5 @@ export default function ExperienceEffects() {
     document.body.classList.add("has-custom-cursor"); window.addEventListener("mousemove", updateCursor, { passive: true }); window.addEventListener("scroll", updateScroll, { passive: true }); updateScroll();
     return () => { document.body.classList.remove("has-custom-cursor"); window.removeEventListener("mousemove", updateCursor); window.removeEventListener("scroll", updateScroll); };
   }, []);
-  return <div className={`custom-cursor${interactive ? " is-interactive" : ""}`} aria-hidden="true"><span>✦</span></div>;
+  return <div className={`custom-cursor${interactive ? " is-interactive" : ""}`} aria-hidden="true" />;
 }
