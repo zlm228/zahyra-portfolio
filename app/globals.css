@@ -54,7 +54,7 @@ p,h1,h2,h3,blockquote { margin-top:0; }
 .hero .sparkle-two { transform:translateY(calc(var(--page-scroll, 0px) * -.07)); }
 
 .portrait-story { display:grid; grid-template-columns:minmax(280px,.82fr) minmax(0,1.18fr); gap:clamp(2rem,7vw,6rem); align-items:center; margin-bottom:clamp(5rem,9vw,8rem); }
-.portrait-frame { position:relative; display:grid; min-height:560px; place-items:center; overflow:hidden; border-radius:13rem 13rem 1.5rem 1.5rem; background:linear-gradient(145deg,#eee5f4 0%,#f4dfe6 48%,#e8c7d0 100%); box-shadow:0 30px 70px rgba(74,53,56,.12); isolation:isolate; }
+.portrait-frame { position:relative; display:grid; height:560px; place-items:center; overflow:hidden; border-radius:13rem 13rem 1.5rem 1.5rem; background:linear-gradient(145deg,#eee5f4 0%,#f4dfe6 48%,#e8c7d0 100%); box-shadow:0 30px 70px rgba(74,53,56,.12); isolation:isolate; }
 .portrait-frame::before { content:""; position:absolute; inset:1rem; z-index:2; border:1px solid rgba(255,255,255,.7); border-radius:12rem 12rem 1rem 1rem; pointer-events:none; }
 .portrait-frame::after { content:none; }
 .portrait-photo { object-fit:cover; object-position:center center; filter:saturate(.94) contrast(.98); transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .7s ease; }
@@ -140,7 +140,7 @@ p,h1,h2,h3,blockquote { margin-top:0; }
 
 @media (max-width:800px) {
   .portrait-story,.case-body,.case-gallery figure { grid-template-columns:1fr; }
-  .portrait-frame { min-height:460px; }
+  .portrait-frame { height:460px; }
   .currently-label { width:auto; padding-right:1rem; }
   .capability-grid { grid-template-columns:1fr; }
   .capability-card { min-height:280px; }
@@ -149,7 +149,7 @@ p,h1,h2,h3,blockquote { margin-top:0; }
   .case-body aside .button { width:100%; }
 }
 @media (max-width:480px) {
-  .portrait-frame { min-height:390px; border-radius:9rem 9rem 1.25rem 1.25rem; }
+  .portrait-frame { height:390px; border-radius:9rem 9rem 1.25rem 1.25rem; }
   .portrait-copy dl div { grid-template-columns:1fr; gap:.4rem; }
   .scroll-cue { display:none; }
   .case-narrative article { grid-template-columns:35px 1fr; gap:1rem; }
