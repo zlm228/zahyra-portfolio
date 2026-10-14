@@ -1,20 +1,20 @@
 <div align="center">
 
-# Zahyra Otero · Portfolio ✦
+# Zahyra Otero · Portfolio
 
-**Data · Product · Thoughtful Technology**
+**Data · Code · Product**
 
-A personal portfolio centered on useful technology, intentional design, and the people behind every problem.
+My personal portfolio and a closer look at the products, interfaces, and systems I have built across full-stack development, data, AI, and product.
 
-[View the portfolio](https://zahyra-portfolio.vercel.app) · [LinkedIn](https://www.linkedin.com/in/zahyra-otero/) · [GitHub](https://github.com/zlm228)
+[View the live portfolio](https://zahyra-portfolio.vercel.app) · [LinkedIn](https://www.linkedin.com/in/zahyra-otero/) · [GitHub](https://github.com/zlm228)
 
 </div>
 
-## A little about me
+## About
 
-I am Zahyra, a first-generation Latina and Data Science student at New York University exploring the intersection of data, software, AI, and product. I enjoy turning everyday problems into technology that feels accessible, thoughtful, and genuinely enjoyable to use.
+I am Zahyra, a first-generation Latina studying Data Science with a minor in Business Studies at New York University. I like noticing the little things that make everyday life harder and figuring out how technology could make them better.
 
-This portfolio brings together the products I have built, the technical skills I am developing, and the visual details that make my work feel like me. I am especially interested in consumer technology, beauty, entertainment, and fintech, along with the ways these industries can make products and services more accessible.
+I am especially interested in consumer technology, beauty, entertainment, and fintech, and in building products that are useful, accessible, and easier for people to navigate.
 
 ## Selected work
 
@@ -36,61 +36,22 @@ An internal AI-powered workspace developed during my internship. My work include
 
 `JavaScript` `HTML/CSS` `Prompt engineering` `Google Apps Script` `Zapier`
 
-## The portfolio
+## Inside the portfolio
 
-The site was designed to feel editorial, warm, and personal while remaining easy to navigate. It includes:
-
-- A personal introduction grounded in my identity and interests
-- Detailed project stories that highlight both frontend and backend work
-- An expandable interface gallery for my Eclipse UI work
-- A responsive layout, mobile navigation, and accessible focus states
-- Direct links to live projects, my résumé, GitHub, LinkedIn, and email
+- Dedicated case-study pages covering each project’s problem, approach, contribution, and outcome
+- A project gallery highlighting selected Eclipse interface work
+- A capabilities section connecting my skills to real project experience
+- An editorial about section with more about my background, interests, and goals
+- Smooth scrolling, subtle scroll reveals, and responsive interactions
+- Accessible navigation, focus states, reduced-motion support, and mobile layouts
+- Direct links to my résumé, email, LinkedIn, GitHub, and live projects
 
 ## Built with
 
-- Next.js 16 and React 19
-- TypeScript
-- Tailwind CSS and custom responsive CSS
-- Next.js image and font optimization
-- ESLint and accessibility-focused linting
-- Vercel for continuous deployment
-
-## Run it locally
-
-```bash
-git clone https://github.com/zlm228/zahyra-portfolio.git
-cd zahyra-portfolio
-npm install
-npm run dev
-```
-
-Then open [http://localhost:3000](http://localhost:3000).
-
-Before publishing changes, run:
-
-```bash
-npm run lint
-npm run build
-```
-
-## Project structure
-
-```text
-zahyra-portfolio/
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── public/
-│   ├── projects/
-│   ├── favicon.svg
-│   ├── og.png
-│   └── zahyra-otero-resume.pdf
-└── README.md
-```
+`Next.js 16` · `React 19` · `TypeScript` · `Lenis` · `Custom CSS` · `Vercel`
 
 <div align="center">
 
-Designed with intention, curiosity, and a little sparkle ✦
+Built and designed by Zahyra Otero · New York City
 
 </div>
