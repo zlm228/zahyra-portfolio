@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import ScrollProgress from "./components/ScrollProgress";
-import ExperienceEffects from "./components/ExperienceEffects";
 import { capabilities, projects } from "./data/projects";
 
 function SectionHeading({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
@@ -10,8 +8,6 @@ function SectionHeading({ eyebrow, children }: { eyebrow: string; children: Reac
 
 export default function Home() {
   return <main>
-    <ScrollProgress />
-    <ExperienceEffects />
     <header className="site-header">
       <a className="wordmark" href="#home" aria-label="Zahyra Otero, home">zo.</a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#connect">Connect</a></nav>

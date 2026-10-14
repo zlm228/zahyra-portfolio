@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, Fraunces } from "next/font/google";
 import { headers } from "next/headers";
+import ExperienceEffects from "./components/ExperienceEffects";
+import ScrollProgress from "./components/ScrollProgress";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -38,5 +40,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${dmSans.variable}`}><body>{children}</body></html>;
+  return <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${dmSans.variable}`}><body><ScrollProgress /><ExperienceEffects />{children}</body></html>;
 }
